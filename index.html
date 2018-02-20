@@ -1,0 +1,119 @@
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="./app.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+ 
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+</style>
+<body>
+<h1>Supply Chain</h1>
+
+ <h2 bgcolor:blue>View Consignments</h2>
+<table border="1px">
+  <tr>
+    <th>Supplier</th>
+    <th>Cold Storage</th> 
+    <th>Temperature</th>
+    <th>Qty</th>
+    <th>Rate</th>
+    <th>Shipping Charge</th>
+  </tr>
+  
+</table>
+
+
+<form>
+  <br>Distributor:<input type="text" name="Distributor" id="distributoraddress"></br>
+  <br>Supplier:<input type="text" name="Supplier" id="supplieraddress"></br>
+  <br>Temperature:<input type="text" name="Temperature" id="Temperatureaddress"></br>
+   <br>Qty:<input type="text" name="Qty" id="Qtyaddress"></br>
+    <br>Rate:<input type="text" name="Rate" id="Rateaddress"></br>
+  <br> Shipping Charge:<input type="text" name="Shippingcharge" id="Shippingaddress"></br>
+
+</form>
+<input type="button"  value="Add Consignment">
+
+
+<h2 bgcolor:blue>Loss of Temperature</h2>
+<form>
+  <br>Cold Storage:<input type="text" name="Cold Storage"></br>
+  
+  <br>DecreaseTemperature By:<input type="text" name="DecreaseTemperature By" id="DecreaseTempaddress"></br></form>
+
+<input type="button"  value="Set Temperature">
+
+
+<h2 bgcolor:blue>Check at Transit Point</h2>
+<form>
+  <br>Thermometer:<input type="text" name="Thermometer" id="Thermometeraddress"></br>
+  
+  <br>Cold Storage:<input type="text" name="Cold Storage" id="ColdStorageaddress"></br></form>
+
+
+
+<input type="button"  value="Record Temperature">
+
+<h2 bgcolor:blue>Generate Advice of Payment</h2>
+
+<br>Cold Storage:<input type="text" name="Cold Storage" id="ColdStoraddress"></br>
+<input type="button"  value="Generate Payment">
+<br>Distributor Amount<input type="text" name="Distributor Amount" id="Distributoraddress"></br>
+<br>Loss of Temperature<input type="text" name="Loss of Temperature" id="Lossof Tempaddress"></br>
+<br>Supplier Amount<input type="text" name="Supplier Amount" id="supplierAmountaddress"></br>
+<br>Suppier Penality<input type="text" name="Supplier Penality" id="supplierpenalityaddress"></br>
+<input type="button"  value="Pay to Distributor">  <input type="button"  value="Pay to Supplier">
+
+<h2 bgcolor:blue>Supply Chains Thermometers History</h2>
+
+<form>
+<table border:"1px">
+  <tr>
+    
+    <th>Cold Storage</th> 
+     <th>Thermometer</th>
+    <th>Temperature</th>
+    
+  </tr>
+<tr>
+   <td>0x9a12246c5a0ab5bf6de4a16fd3800a16</td>
+   <td>0x8aef665ebcjshdksgaf8637855bjg3kh</td>
+    <td>90</td>
+</tr>
+<tr>
+   <td>0x9a12246c5a0ab5bf6de4a16fd3800a16</td>
+   <td>0x988972hwtr78rhyw9wrhui37r98393830</td>
+    <td>85</td>
+</tr>
+<tr>
+   <td>0x9a12246c5a0ab5bf6de4a16fd3800a16</td>
+   <td>0x8c59w7rirhu37rh9w7r0w48t4r94wyt49w</td>
+    <td>75</td>
+</tr>
+
+
+  
+</table>
+
+
+
+</head>
+
+</body>
+</html>
